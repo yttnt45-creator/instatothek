@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(145deg , #222 , #111);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* تنسيق العنوان العلوي */
+.top-header {
+    position: absolute; /* ليثبت في الأعلى */
+    top: 50px;         /* مسافة من أعلى المتصفح */
+    text-align: center;
+    width: 100%;
+}
+
+.top-header h1 {
+    font-size: 24px;
+    color: #e4e4e4;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.top-header p {
+    font-size: 14px;
+    color: #8e8e8e;
+}
+
+/* تعديل بسيط على الـ body لضمان عدم تداخل العناصر */
+body {
+    flex-direction: column; /* لترتيب العناوين فوق بعضها */
+    padding-top: 100px;    /* مساحة إضافية للجزء العلوي */
+}
+
+.container {
+    width: 350px;
+}
+
+.login-box, .signup-box {
+    background: linear-gradient(145deg , #333 , #222);
+    border: 1px solid #dbdbdb;
+    padding: 20px 40px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.logo {
+    font-family: 'Arial', cursive; /* يمكنك استبدالها بصورة لوجو انستجرام */
+    font-size: 3rem;
+    margin: 20px 0;
+}
+
+.login-form input {
+    width: 100%;
+    height: 50px;
+    color: black;
+    padding: 10px;
+    margin-bottom: 10px;
+    background: #161515;
+    border: 1px solid #dbdbdb;
+    border-radius: 15px;
+    font-size: 12px;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 7px;
+    background-color: #0095f6;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.line {
+    flex: 1;
+    height: 1px;
+    background: #dbdbdb;
+}
+
+.divider p {
+    margin: 0 15px;
+    color: #8e8e8e;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.fb-login a {
+    color: #385185;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.forgot-password {
+    display: block;
+    margin-top: 20px;
+    font-size: 12px;
+    color: #00376b;
+    text-decoration: none;
+}
+
+.signup-box {
+    margin-top: 10px;
+}
+
+.signup-box p {
+    font-size: 14px;
+}
+
+.signup-box a {
+    color: #0095f6;
+    text-decoration: none;
+    font-weight: bold;
+}
